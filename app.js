@@ -30,7 +30,12 @@ function selectBox() {
 function applyProperties() {
   if (select.value && display.childElementCount && (select.value <= display.childElementCount)) {
     let target = display.children[select.value - 1];
-    let propVal = `${this.name}: ${this.value}px;`;
+    if (this.name === 'border') {
+      var propVal = `${this.name}: ${this.value}px solid black`;
+    }
+    else {
+      propVal = `${this.name}: ${this.value}px;`;
+    }
     target.style.cssText += propVal;
   }
 }
