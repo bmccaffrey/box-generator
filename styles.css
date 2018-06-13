@@ -17,6 +17,12 @@ body {
 
 }
 
+.control-panel__stats{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(7, 1fr);
+}
+
 .display {
   background-color: #F2F2F2;
   color: orange;
