@@ -8,6 +8,7 @@ var properties = document.querySelectorAll('[type="number"]');
 var radioProperties = document.querySelectorAll('[type="radio"]');
 var block = document.getElementById('block');
 var inlineBlock = document.getElementById('inline-block');
+var flex = document.getElementById('flex');
 
 function createBox() {
   let newBox = document.createElement('div');
