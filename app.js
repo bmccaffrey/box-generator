@@ -3,9 +3,7 @@
 var addButton = document.getElementById('add');
 var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
-var select = document.getElementById('select');
-var height = document.getElementById('height');
-var width = document.getElementById('width');
+var select = document.getElementById('select'); // possible to remove
 var properties = document.querySelectorAll('[type="number"]');
 
 function createBox() {
