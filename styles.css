@@ -1,6 +1,14 @@
 body {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 20% 1fr;
   grid-gap: 0 5%;
   height: 100vh;
+}
+
+aside {
+  background-color: #BDBDBD;
+  height: 75vh;
+  margin: 35px 0 0 35px;
+  border-radius: 12px;
 }
