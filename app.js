@@ -18,13 +18,6 @@ function deleteBox() {
   }
 }
 
-function selectBox() {
-  if (select.value) {
-    console.log(select.value);
-    return (display.children[select.value - 1]);
-  }
-}
-
 function applyProperties() {
   if (select.value && display.childElementCount && (select.value <= display.childElementCount)) {
     let target = display.children[select.value - 1];
@@ -40,5 +33,4 @@ function applyProperties() {
 
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
-select.addEventListener('input', selectBox);
 properties.forEach(property => property.addEventListener('input', applyProperties));
