@@ -3,6 +3,7 @@
 var addButton = document.getElementById('add');
 var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
+var select = document.querySelector('[name="select"]');
 
 function createBox() {
   let newBox = document.createElement('div');
