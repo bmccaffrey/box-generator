@@ -6,6 +6,7 @@ var display = document.querySelector('.display');
 var select = document.getElementById('select');
 var height = document.getElementById('height');
 var width = document.getElementById('width');
+var properties = document.querySelectorAll('[type="number"]');
 
 function createBox() {
   let newBox = document.createElement('div');
@@ -37,5 +38,3 @@ function applyProperties() {
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
 select.addEventListener('input', selectBox);
-height.addEventListener('input', applyProperties);
-width.addEventListener('input', applyProperties);
