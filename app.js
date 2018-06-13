@@ -46,3 +46,7 @@ block.addEventListener('change', function() {
   let children = Array.from(display.children);
   children.forEach(child => child.style.display = 'block');
 });
+inlineBlock.addEventListener('change', function() {
+  let children = Array.from(display.children);
+  children.forEach(child => child.style.display = 'inline-block');
+});
