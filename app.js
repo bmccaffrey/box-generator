@@ -6,6 +6,7 @@ var display = document.querySelector('.display');
 var select = document.getElementById('select'); // possible to remove
 var properties = document.querySelectorAll('[type="number"]');
 var radioProperties = document.querySelectorAll('[type="radio"]');
+var block = document.getElementById('block');
 
 function createBox() {
   let newBox = document.createElement('div');
