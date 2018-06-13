@@ -5,7 +5,7 @@ var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
 var select = document.getElementById('select'); // possible to remove
 var properties = document.querySelectorAll('[type="number"]');
-var radioProperties = document.querySelectorAll('[type="radio"]');
+
 var block = document.getElementById('block');
 var inlineBlock = document.getElementById('inline-block');
 var flex = document.getElementById('flex');
@@ -42,15 +42,17 @@ function applyRadioProperties() {
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
 properties.forEach(property => property.addEventListener('input', applyProperties));
-radioProperties.forEach(property => property.addEventListener('change', applyRadioProperties));
+
 block.addEventListener('change', function() {
   let children = Array.from(display.children);
   children.forEach(child => child.style.display = 'block');
 });
+
 inlineBlock.addEventListener('change', function() {
   let children = Array.from(display.children);
   children.forEach(child => child.style.display = 'inline-block');
 });
+
 flex.addEventListener('change', function() {
   display.classList.toggle('display--flex');
 });
