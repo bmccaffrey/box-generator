@@ -2,4 +2,5 @@ body {
   display: grid;
   grid-template-columns: 20% 1fr;
   grid-gap: 0 5%;
+  height: 100vh;
 }
