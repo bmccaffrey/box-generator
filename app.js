@@ -3,7 +3,8 @@
 var addButton = document.getElementById('add');
 var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
-var select = document.querySelector('[name="select"]');
+var select = document.getElementById('select');
+var height = document.getElementById('height');
 
 function createBox() {
   let newBox = document.createElement('div');
