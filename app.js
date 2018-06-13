@@ -17,5 +17,12 @@ function deleteBox() {
   }
 }
 
+function selectBox() {
+  if (select.value) {
+    console.log(select.value);
+    return (display.children[select.value - 1]);
+  }
+}
+
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
