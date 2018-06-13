@@ -32,6 +32,10 @@ function applyProperties() {
   }
 }
 
+function applyRadioProperties() {
+  Array.from(display.children).forEach(child => child.classList.toggle(`${this.id}`));
+}
+
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
 properties.forEach(property => property.addEventListener('input', applyProperties));
