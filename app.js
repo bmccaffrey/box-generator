@@ -7,6 +7,7 @@ var select = document.getElementById('select'); // possible to remove
 var properties = document.querySelectorAll('[type="number"]');
 var radioProperties = document.querySelectorAll('[type="radio"]');
 var block = document.getElementById('block');
+var inlineBlock = document.getElementById('inline-block');
 
 function createBox() {
   let newBox = document.createElement('div');
