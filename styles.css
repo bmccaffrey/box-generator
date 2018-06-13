@@ -13,7 +13,11 @@ body {
   border-radius: 12px;
 }
 
-main {
+.control-panel__title {
+
+}
+
+.display {
   background-color: #F2F2F2;
   color: orange;
   height: 75vh;
