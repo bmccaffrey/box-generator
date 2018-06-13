@@ -17,4 +17,4 @@ function deleteBox() {
 }
 
 addButton.addEventListener('click', createBox);
-
+removeButton.addEventListener('click', deleteBox);
