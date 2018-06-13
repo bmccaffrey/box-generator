@@ -67,3 +67,5 @@ inlineBlock.addEventListener('change', function() {
 flex.addEventListener('change', function() {
   display.classList.toggle('display--flex');
 });
+
+resetButton.addEventListener('click', reset);
