@@ -38,3 +38,4 @@ addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
 select.addEventListener('input', selectBox);
 height.addEventListener('input', applyProperties);
+width.addEventListener('input', applyProperties);
