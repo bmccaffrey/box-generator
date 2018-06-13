@@ -5,6 +5,7 @@ var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
 var select = document.getElementById('select');
 var height = document.getElementById('height');
+var width = document.getElementById('width');
 
 function createBox() {
   let newBox = document.createElement('div');
@@ -24,7 +25,7 @@ function selectBox() {
     return (display.children[select.value - 1]);
   }
 }
-var first = display.children[0];
+
 function applyProperties() {
   if (select.value && display.childElementCount && (select.value <= display.childElementCount)) {
     let target = display.children[select.value - 1];
