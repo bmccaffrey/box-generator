@@ -26,3 +26,4 @@ function selectBox() {
 
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
+select.addEventListener('input', selectBox);
