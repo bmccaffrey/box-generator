@@ -9,6 +9,7 @@ var block = document.getElementById('block');
 var inlineBlock = document.getElementById('inline-block');
 var flex = document.getElementById('flex');
 var resetButton = document.getElementById('reset');
+var dataKeys = document.querySelectorAll('[data-key]');
 
 function createBox() {
   let newBox = document.createElement('div');
