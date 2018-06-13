@@ -9,3 +9,5 @@ function createBlock() {
   newBox.classList.add('box');
   display.append(newBox);
 }
+
+addButton.addEventListener('click', createBlock);
