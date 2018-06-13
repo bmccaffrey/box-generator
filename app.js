@@ -41,3 +41,7 @@ addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
 properties.forEach(property => property.addEventListener('input', applyProperties));
 radioProperties.forEach(property => property.addEventListener('change', applyRadioProperties));
+block.addEventListener('change', function() {
+  let children = Array.from(display.children);
+  children.forEach(child => child.style.display = 'block');
+});
