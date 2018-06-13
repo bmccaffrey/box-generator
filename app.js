@@ -35,10 +35,6 @@ function applyProperties() {
   }
 }
 
-function applyRadioProperties() {
-  Array.from(display.children).forEach(child => child.classList.toggle(`${this.id}`));
-}
-
 function reset() {
   for (var children in display.children) {
     deleteBox();
