@@ -38,3 +38,4 @@ function applyProperties() {
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
 select.addEventListener('input', selectBox);
+properties.forEach(property => property.addEventListener('input', applyProperties));
