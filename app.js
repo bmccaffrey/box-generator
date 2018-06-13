@@ -46,6 +46,12 @@ function reset() {
   if (display.classList.contains('display--flex')) {
     display.classList.toggle('display--flex');
   }
+  uncheck();
+}
+
+function uncheck() {
+  var allProperties = document.querySelectorAll('input');
+  allProperties.forEach(property => { property.value = ''; property.checked = ''; });
 }
 
 addButton.addEventListener('click', createBox);
