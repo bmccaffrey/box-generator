@@ -24,6 +24,14 @@ function selectBox() {
     return (display.children[select.value - 1]);
   }
 }
+var first = display.children[0];
+function applyProperties() {
+  if (select.value && display.childElementCount && (select.value <= display.childElementCount)) {
+    let target = display.children[select.value - 1];
+    let propVal = `${this.name}: ${this.value}px;`;
+    target.style.cssText += propVal;
+  }
+}
 
 addButton.addEventListener('click', createBox);
 removeButton.addEventListener('click', deleteBox);
