@@ -24,6 +24,11 @@ body {
   width: 50vw;
   border-radius: 15px;
   margin-top: 35px;
+  box-sizing: border-box;
+}
+
+.display--flex{
+  display: flex;
 }
 
 .box {
@@ -31,4 +36,12 @@ body {
   width: 100px;
   border: 1px solid black;
   border-radius: 15px;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
