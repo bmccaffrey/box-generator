@@ -51,6 +51,10 @@ function reset() {
   uncheck();
 }
 
+function setStats() {
+  dataKeys.forEach(key => key.textContent = (window[key.dataset.key].value));
+}
+
 addButton.addEventListener('click', createBox);
 
 removeButton.addEventListener('click', deleteBox);
