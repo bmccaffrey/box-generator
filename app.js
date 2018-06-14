@@ -36,6 +36,11 @@ function applyProperties() {
   }
 }
 
+function uncheck() {
+  var allProperties = document.querySelectorAll('input');
+  allProperties.forEach(property => { property.value = ''; property.checked = ''; });
+}
+
 function reset() {
   for (var children in display.children) {
     deleteBox();
@@ -44,11 +49,6 @@ function reset() {
     display.classList.toggle('display--flex');
   }
   uncheck();
-}
-
-function uncheck() {
-  var allProperties = document.querySelectorAll('input');
-  allProperties.forEach(property => { property.value = ''; property.checked = ''; });
 }
 
 addButton.addEventListener('click', createBox);
