@@ -52,7 +52,9 @@ function reset() {
 }
 
 function setStats() {
-  dataKeys.forEach(key => key.textContent = (window[key.dataset.key].value));
+  let target = display.children[select.value - 1];
+  dataKeys.forEach(key => key.textContent = (target.style[key.dataset.key]));
+  dataKeys[0].textContent = select.value;
 }
 
 addButton.addEventListener('click', createBox);
