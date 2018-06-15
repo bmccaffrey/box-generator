@@ -60,6 +60,16 @@ function setStats() {
   dataKeys[0].textContent = select.value;
 }
 
+function displayError () {
+  let error = document.getElementById('error');
+  if (select.value > display.childElementCount) {
+    error.classList.remove('hidden');
+  }
+  if (select.value <= display.childElementCount) {
+    error.classList.add('hidden');
+  }
+}
+
 addButton.addEventListener('click', createBox);
 
 removeButton.addEventListener('click', deleteBox);
