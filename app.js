@@ -15,12 +15,14 @@ function createBox() {
   let newBox = document.createElement('div');
   newBox.classList.add('box');
   display.append(newBox);
+  displayError();
 }
 
 function deleteBox() {
   if (display.lastElementChild){
     display.lastElementChild.remove();
   }
+  displayError();
 }
 
 function applyProperties() {
