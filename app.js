@@ -32,8 +32,8 @@ function applyProperties() {
     if (this.name === 'border') {
       var propVal = `${this.name}: ${this.value}px solid black`;
     }
-    else if (this.name === 'backgroundColor') {
-      propVal = propVal = `${this.name}: ${this.value};`;
+    else if (this.name === 'background-color') {
+      propVal = `${this.name}: ${this.value};`;
     }
     else {
       propVal = `${this.name}: ${this.value}px;`;
@@ -99,6 +99,7 @@ flex.addEventListener('change', function() {
 resetButton.addEventListener('click', reset);
 
 properties.forEach(property => property.addEventListener('input', setStats));
+color.addEventListener('input', applyProperties);
 
 select.addEventListener('input', () => uncheck('select'));
 select.addEventListener('input', displayError);
