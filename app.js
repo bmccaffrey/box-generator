@@ -3,7 +3,7 @@
 var addButton = document.getElementById('add');
 var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
-var select = document.getElementById('select'); // possible to remove
+var select = document.getElementById('select');
 var properties = document.querySelectorAll('[type="number"]');
 var block = document.getElementById('block');
 var inlineBlock = document.getElementById('inline-block');
@@ -36,8 +36,11 @@ function applyProperties() {
   }
 }
 
-function uncheck() {
-  var allProperties = document.querySelectorAll('input');
+function uncheck(props) {
+  var allProperties = Array.from(document.querySelectorAll('input'));
+  if (props){
+    allProperties.shift();
+  }
   allProperties.forEach(property => { property.value = ''; property.checked = ''; });
 }
 
