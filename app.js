@@ -31,6 +31,9 @@ function applyProperties() {
     if (this.name === 'border') {
       var propVal = `${this.name}: ${this.value}px solid black`;
     }
+    else if (this.name === 'backgroundColor') {
+      propVal = propVal = `${this.name}: ${this.value};`;
+    }
     else {
       propVal = `${this.name}: ${this.value}px;`;
     }
