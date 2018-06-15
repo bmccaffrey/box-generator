@@ -95,3 +95,4 @@ resetButton.addEventListener('click', reset);
 properties.forEach(property => property.addEventListener('input', setStats));
 
 select.addEventListener('input', () => uncheck('select'));
+select.addEventListener('input', displayError);
