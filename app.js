@@ -4,14 +4,14 @@ var addButton = document.getElementById('add');
 var removeButton = document.getElementById('remove');
 var display = document.querySelector('.display');
 var select = document.getElementById('select');
-var properties = document.querySelectorAll('[type="number"]');
+var properties = Array.from(document.querySelectorAll('[type="number"]'));
 var block = document.getElementById('block');
 var inlineBlock = document.getElementById('inline-block');
 var flex = document.getElementById('flex');
 var resetButton = document.getElementById('reset');
 var dataKeys = document.querySelectorAll('[data-key]');
 var color = document.querySelector('[type="color"]');
-
+properties.push(color);
 function createBox() {
   let newBox = document.createElement('div');
   newBox.classList.add('box');
@@ -99,7 +99,6 @@ flex.addEventListener('change', function() {
 resetButton.addEventListener('click', reset);
 
 properties.forEach(property => property.addEventListener('input', setStats));
-color.addEventListener('input', applyProperties);
 
 select.addEventListener('input', () => uncheck('select'));
 select.addEventListener('input', displayError);
