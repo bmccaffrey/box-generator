@@ -83,3 +83,5 @@ flex.addEventListener('change', function() {
 resetButton.addEventListener('click', reset);
 
 properties.forEach(property => property.addEventListener('input', setStats));
+
+select.addEventListener('input', () => uncheck('select'));
