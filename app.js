@@ -10,6 +10,7 @@ var inlineBlock = document.getElementById('inline-block');
 var flex = document.getElementById('flex');
 var resetButton = document.getElementById('reset');
 var dataKeys = document.querySelectorAll('[data-key]');
+var color = document.querySelector('[type="color"]');
 
 function createBox() {
   let newBox = document.createElement('div');
