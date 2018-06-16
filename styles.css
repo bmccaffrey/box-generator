@@ -18,6 +18,10 @@ body {
 
 }
 
+.control-panel__stats-title {
+  margin-top: 5px;
+}
+
 .control-panel__stats{
   display: grid;
   grid-template-columns: 1fr 2fr;
