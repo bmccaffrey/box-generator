@@ -4,12 +4,12 @@ body {
   grid-template-columns: 20% 1fr;
   grid-gap: 0 5%;
   height: 100vh;
+  margin: 35px 0 0 35px;
 }
 
 .control-panel {
   background-color: #BDBDBD;
   height: 85vh;
-  margin: 35px 0 0 35px;
   border-radius: 12px;
 }
 
@@ -29,7 +29,7 @@ body {
   height: 75vh;
   width: 50vw;
   border-radius: 15px;
-  margin-top: 35px;
+  margin-top: 5vh;
   box-sizing: border-box;
 }
 
