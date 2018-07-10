@@ -12,10 +12,7 @@ body {
   height: 85vh;
   border-radius: 12px;
   padding-left: 10px;
-}
-
-.control-panel__title {
-
+  overflow: auto;
 }
 
 .control-panel__stats-title {
